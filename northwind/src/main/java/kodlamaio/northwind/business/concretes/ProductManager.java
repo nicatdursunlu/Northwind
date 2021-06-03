@@ -64,8 +64,6 @@ public class ProductManager implements ProductService {
 
 	@Override
 	public DataResult<Product> getByProductNameAndCategoryId(String productName, int categoryId) {
-		//business codes
-		
 		return new SuccessDataResult<Product>
 		(this.productDao.getByProductNameAndCategory_CategoryId(productName,categoryId),"Data listelendi");
 	}

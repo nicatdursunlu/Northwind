@@ -33,6 +33,11 @@ public class ProductsController {
 		return this.productService.getAll();
 	}
 	
+	@GetMapping("/getAll/id")
+	public DataResult<List<Product>> getAllF(){
+		return this.productService.getAll();
+	}
+	
 	@PostMapping("/add")
 	public Result add(@RequestBody Product product){
 		return this.productService.add(product);
